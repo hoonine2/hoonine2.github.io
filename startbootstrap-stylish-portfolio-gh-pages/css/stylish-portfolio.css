@@ -45,8 +45,8 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
+/* Map 지도안씀 */
+/* .map {
   height: 30rem;
 }
 
@@ -58,7 +58,7 @@ h6 {
 
 .map iframe {
   pointer-events: none;
-}
+} */
 
 .scroll-to-top {
   position: fixed;
@@ -69,17 +69,17 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(52, 58, 64, 0.5);
+  background: rgba(52, 58, 64, 0);
   line-height: 45px;
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
   color: white;
 }
-
+/* 
 .scroll-to-top:hover {
   background: #343a40;
-}
+} */
 
 .scroll-to-top i {
   font-weight: 800;
@@ -202,7 +202,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #3092ff;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -260,15 +260,16 @@ h6 {
   font-size: 1.2rem;
 }
 
+/* ㅡㅡㅡㅡㅡ애니메이션 */
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
   }
   .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-in;
+    transition: clip-path 0.25s ease-in, background-color 0.7s;
+    transition: clip-path 0.25s ease-in, background-color 0.7s, -webkit-clip-path 0.25s ease-in;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
@@ -279,9 +280,9 @@ h6 {
     margin-bottom: 5rem;
   }
   .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    transition: -webkit-clip-path 0.25s ease-in;
+    transition: clip-path 0.25s ease-in;
+    transition: clip-path 0.25s ease-in, -webkit-clip-path 0.25s ease-in;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
@@ -295,6 +296,8 @@ h6 {
     clip-path: inset(2rem);
   }
 }
+/* ㅡㅡㅡㅡㅡㅡ애니메이션 조절 */
+
 
 .map iframe {
   height: 100%;
@@ -313,33 +316,33 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
-  transition: background-color 0.15s ease-in-out;
+  background-color: #3092ff;
+  transition: background-color 0.15s ease-in-inease-in;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #1558bb;
   text-decoration: none;
 }
 
 a {
-  color: #1D809F;
+  color: #3092ff;
 }
 
 a:hover, a:focus, a:active {
-  color: #155d74;
+  color: #1558bb;
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #3092ff !important;
+  border-color: #3092ff !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #1558bb !important;
+  border-color: #1558bb !important;
 }
 
 .btn-secondary {
@@ -363,11 +366,11 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #3092ff !important;
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #3092ff !important;
 }
 
 .text-secondary {
