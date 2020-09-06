@@ -32,6 +32,38 @@ body {
   text-transform: uppercase;
 }
 
+
+.nav-wrap {
+  position: fixed;
+  height : 60px;
+  top: 0;
+  background: #ffffff;
+  z-index: 9;
+  width: 100%;
+}
+
+.nav-contents {
+  margin: 0 auto;
+  width: 1110px;
+  height: 100%;
+  background: #cacaca;
+}
+
+.list {
+  float : right;
+  list-style-type: none;
+}
+
+.list-btn {
+  /* display: inline; */
+  float: left;
+  width: 100px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  vertical-align: bottom;
+}
+
+
 h1,
 h2,
 h3,
