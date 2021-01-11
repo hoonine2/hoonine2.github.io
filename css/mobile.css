@@ -2,7 +2,7 @@ body {
     background: #d4d6df;
     /* background: #f8f8f8; */
     color : #242424;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'inter', sans-serif;
 
     /* 가로스크롤 막기 테스트 */
     max-width: 100%;
