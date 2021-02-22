@@ -32,7 +32,7 @@ body {
 
 ::selection {
     background-color: #242424;
-    color: yellow;
+    color: rgb(255, 230, 0);
 }
 
 header {
@@ -64,14 +64,15 @@ li {
 
 li a:hover {
     text-decoration: none;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     color: rgb(255, 188, 4);
     text-decoration: none;
 }
 
 a {
     text-decoration: none;
-    color: #acacac;
+    /* color: #acacac; */
+    color: #242424;
 }
 /* 일단 사용안함
 h1 {
@@ -169,6 +170,7 @@ h3 {
     opacity:0.7;
     margin:20px;
     line-height: 120%;
+    pointer-events: none;
 }
 
 .footer{
