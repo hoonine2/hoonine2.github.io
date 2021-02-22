@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
 </head>
 
@@ -30,25 +31,25 @@
             </div>
         </header>
         <section>
-            <div style="height:380px; width:auto;"></div>
+            <div style="height:380px; width:auto;"></div><!--380px 여백-->
             <div class="list" onclick="window.location='project1.html'">
-                <div class="image dim">
+                <div id="fadein" class="image">
                     <p class="caption">Title - Cinema 4D Netflix<br>2020.06</p>
-                    <div class="filter"></div>
-                    <img src="img/thumbnail/c4d.png" alt="" class="thumbnail-size">
+                    <div class="dim"></div>
+                    <img src="img/thumbnail/c4d.png" alt="" class="thumbnail-size filter">
                 </div>
             </div>
 
             <div class="list" onclick="window.location='project1.html'">
-                <div class="image dim">
-                    <div class="filter"></div>
+                <div class="image hide">
+                    <div class="dim"></div>
                     <img src="img/thumbnail/poster.png" alt="" class="thumbnail-size">
                 </div>
             </div>
 
             <div class="list" onclick="window.location='project1.html'">
-                <div class="image dim">
-                    <div class="filter"></div>
+                <div class="image hide">
+                    <div class="dim"></div>
                     <img src="img/thumbnail/1200.png" alt="" class="thumbnail-size">
                 </div>
             </div>
