@@ -2,6 +2,7 @@ body {
     background: #f8f8f8;
     color : #242424;
     font-family: 'tex_gyre_herosregular';
+    cursor:url('cursor.cur'),auto;
 }
 
 @font-face {
@@ -40,7 +41,7 @@ header {
     height: 50px;
     padding-top: 10px;
     position: fixed;
-    z-index: 111;
+    z-index: 22;
     /* background: #f8f8f8; */
 }
 
@@ -146,8 +147,8 @@ h3 {
     -webkit-filter: grayscale(20%);
 } */
 
-.dim {
-    background-color: rgb(0, 0, 0);
+.cover {
+    background-color: rgb(255, 188, 4);
     width: 1200px;
     height: 675px;
     position: absolute;
@@ -156,7 +157,7 @@ h3 {
     opacity: 0;
 }
 
-.dim:hover{
+.cover:hover{
     background-color:  rgb(255, 188, 4);
     opacity: 1;
     transition: 0s;
