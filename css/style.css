@@ -2,7 +2,6 @@ body {
     background: #f8f8f8;
     color : #242424;
     font-family: 'tex_gyre_herosregular';
-    /* font-weight: 300; */
 }
 
 @font-face {
@@ -13,6 +12,7 @@ body {
          url('font/texgyreheros-bold-webfont.woff') format('woff'),
          url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
          url('font/texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
+         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
     font-weight: normal;
     font-style: normal;
 }
@@ -25,6 +25,7 @@ body {
          url('font/texgyreheros-regular-webfont.woff') format('woff'),
          url('font/texgyreheros-regular-webfont.ttf') format('truetype'),
          url('font/texgyreheros-regular-webfont.svg#tex_gyre_herosregular') format('svg');
+         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
     font-weight: normal;
     font-style: normal;
 }
