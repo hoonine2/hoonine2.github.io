@@ -97,6 +97,11 @@ h3 {
     display: inline-block;
 }
 */
+
+.space{
+    height:380px; 
+    width:auto;
+}
 .nav-wrap {
     width: auto;
     height: 40px;

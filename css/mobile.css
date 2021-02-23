@@ -2,17 +2,48 @@ body {
     background: #d4d6df;
     /* background: #f8f8f8; */
     color : #242424;
-    font-family: 'inter', sans-serif;
+    font-family: 'tex_gyre_herosregular';
 
     /* 가로스크롤 막기 테스트 */
     max-width: 100%;
 overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'tex_gyre_herosbold';
+    src: url('font/texgyreheros-bold-webfont.eot');
+    src: url('font/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/texgyreheros-bold-webfont.woff2') format('woff2'),
+         url('font/texgyreheros-bold-webfont.woff') format('woff'),
+         url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('font/texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
+         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_herosregular';
+    src: url('font/texgyreheros-regular-webfont.eot');
+    src: url('font/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/texgyreheros-regular-webfont.woff2') format('woff2'),
+         url('font/texgyreheros-regular-webfont.woff') format('woff'),
+         url('font/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('font/texgyreheros-regular-webfont.svg#tex_gyre_herosregular') format('svg');
+         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+    background-color: #242424;
+    color: rgb(255, 230, 0);
+}
+
 header {
     width: 100%;
-    height: 360px;
-    border: 1px dotted rgba(0, 0, 0, 0.1);
+    height: 60px;
+    border: 1px dotted rgba(23, 131, 255, 0.692);
 }
 
 a {
@@ -42,7 +73,7 @@ a {
     text-decoration: none;
     color: #acacac;
 }
-
+/* 
 h1 {
     font-size: 24px;
     font-weight: 600;
@@ -62,23 +93,32 @@ h3 {
     color: #acacac;
     background-color: rgba(14, 167, 167, 0.1);
     display: inline-block;
-}
+} */
 
+.space{
+    height:180px; 
+    width:auto;
+}
 .nav-wrap {
     width: auto;
-    height: 80px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.home-logo{
+    width:50px;
 }
 
 .container {
     max-width: 960px;
     margin: 0 20px;
+    border: solid 1px red;
 }
 
 .home-name {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 20px;
-    font-weight: 600;
     color: #242424;
 }
 
@@ -86,7 +126,7 @@ h3 {
     height: 390px;
     margin-bottom: 16px;
     cursor: pointer;
-    border : dotted 1px rgb(202, 12, 12);
+    border : dotted 1px rgb(131, 235, 61);
 }
 
 .image {
@@ -100,20 +140,72 @@ h3 {
     width: 100%;
     height: auto;
 }
-
-.filter {
+/* 
+폰에서 마우스오버할때 애매해지므로 일단 보류
+.cover {
     background-color: rgba(0, 0, 0, 0.1);
     width: 480px;
     height: 360px;
     position: absolute;
+} */
+
+.caption{
+    font-size: 12px;
+    position: absolute;
+    z-index: 4; 
+    color:#000000;
+    opacity:0.7;
+    margin:10px;
+    line-height: 120%;
+    pointer-events: none;
 }
 
-.home-logo{
-    width:80px;
-    margin-top: 100px;
-}
 .footer{
     margin: 40px 0px;
-    text-align: center;
+    text-align: right;
     font-size: 8px;
+}
+
+
+.hide{
+    opacity: 0;
+}
+
+#fadein { /*이건 스크롤이벤트 없이 페이드인*/
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
