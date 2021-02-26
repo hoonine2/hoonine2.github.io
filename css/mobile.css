@@ -1,7 +1,7 @@
 body {
-    background: rgb(209, 208, 203);
+    background: rgb(255, 255, 255);
     /* background: #f8f8f8; */
-    color : #242424;
+    color: #242424;
     font-family: 'tex_gyre_herosregular';
 
     /* 가로스크롤 막기 테스트 */
@@ -13,11 +13,11 @@ body {
     font-family: 'tex_gyre_herosbold';
     src: url('font/texgyreheros-bold-webfont.eot');
     src: url('font/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/texgyreheros-bold-webfont.woff2') format('woff2'),
-         url('font/texgyreheros-bold-webfont.woff') format('woff'),
-         url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
-         url('font/texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
-         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+        url('font/texgyreheros-bold-webfont.woff2') format('woff2'),
+        url('font/texgyreheros-bold-webfont.woff') format('woff'),
+        url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
+        url('font/texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
     font-weight: normal;
     font-style: normal;
 }
@@ -26,11 +26,11 @@ body {
     font-family: 'tex_gyre_herosregular';
     src: url('font/texgyreheros-regular-webfont.eot');
     src: url('font/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/texgyreheros-regular-webfont.woff2') format('woff2'),
-         url('font/texgyreheros-regular-webfont.woff') format('woff'),
-         url('font/texgyreheros-regular-webfont.ttf') format('truetype'),
-         url('font/texgyreheros-regular-webfont.svg#tex_gyre_herosregular') format('svg');
-         unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+        url('font/texgyreheros-regular-webfont.woff2') format('woff2'),
+        url('font/texgyreheros-regular-webfont.woff') format('woff'),
+        url('font/texgyreheros-regular-webfont.ttf') format('truetype'),
+        url('font/texgyreheros-regular-webfont.svg#tex_gyre_herosregular') format('svg');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +44,7 @@ header {
     width: 100%;
     height: 60px;
     border: 1px dotted rgba(23, 131, 255, 0.692);
-    /* position:fixed; */
+    position: relative;/*고정이 안돼서 임시로 넣음*/
 }
 
 a {
@@ -60,8 +60,8 @@ ul {
 li {
     font-size: 14px;
     float: left;
-    margin-right: 10px;
 }
+
 /* 
 li a:hover {
     text-decoration: none;
@@ -72,8 +72,12 @@ li a:hover {
 
 a {
     text-decoration: none;
-    color: #242424;
 }
+
+img :active{
+    background: red no-repeat;
+}
+
 /* 
 h1 {
     font-size: 24px;
@@ -96,18 +100,19 @@ h3 {
     display: inline-block;
 } */
 
-.space{
-    height:180px; 
-    width:auto;
+.space {
+    height: 80px;
+    width: auto;
 }
+
 .nav-wrap {
     width: auto;
     height: 40px;
     margin-top: 10px;
 }
 
-.home-logo{
-    width:50px;
+.home-logo {
+    width: 50px;
 }
 
 .container {
@@ -120,11 +125,11 @@ h3 {
     height: auto;
     margin-bottom: 16px;
     cursor: pointer;
-    border : dotted 1px rgb(0, 146, 37);
+    border: dotted 1px rgb(0, 146, 37);
 }
 
 .image {
-    width:100%;
+    width: 100%;
     /* max-width: 480px; */
     height: auto;
     /* float: right; */
@@ -134,6 +139,7 @@ h3 {
     width: 100%;
     height: auto;
 }
+
 /* 
 .filter {
     filter:brightness(5);
@@ -144,7 +150,7 @@ h3 {
 
 .myfilter img {
 
-    filter: grayscale(0.99) contrast(1.1) brightness(1.1) ;
+    filter: sepia(0.3) grayscale(0.99) contrast(1.1) brightness(1.21) ;
 
 }
 
@@ -158,10 +164,10 @@ h3 {
 
     position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
 
-    background: #383838;
+    background: rgba(152, 152, 152, 0.25);
 
-    mix-blend-mode: lighten;
-    opacity: 0.5;
+    mix-blend-mode:
+
 }
 
 
@@ -170,68 +176,86 @@ h3 {
     display: none;
 }
 
-.cover:hover{
-    background-color:  rgb(255, 188, 4);
+.cover:hover {
+    background-color: rgb(255, 188, 4);
     opacity: 0;
     transition: 0s;
 }
 
-.caption{
+.caption {
     font-size: 12px;
     position: absolute;
-    z-index: 4; 
-    color:#000000;
-    opacity:0.7;
-    margin:10px;
+    z-index: 4;
+    color: #000000;
+    opacity: 0.7;
+    margin: 10px;
     line-height: 120%;
     pointer-events: none;
 }
 
-.footer{
-    margin: 40px 0px;
+.footer {
+    margin: 40px 0px 20px 0px;
     text-align: right;
     font-size: 10px;
 }
 
 
-.hide{
+.hide {
     opacity: 0;
 }
 
-#fadein { /*이건 스크롤이벤트 없이 페이드인*/
+#fadein {
+    /*이건 스크롤이벤트 없이 페이드인*/
     animation: fadein 1s;
-    -moz-animation: fadein 1s; /* Firefox */
-    -webkit-animation: fadein 1s; /* Safari and Chrome */
-    -o-animation: fadein 1s; /* Opera */
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari and Chrome */
+    -o-animation: fadein 1s;
+    /* Opera */
 }
+
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
-@-moz-keyframes fadein { /* Firefox */
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
-@-o-keyframes fadein { /* Opera */
+
+@-o-keyframes fadein {
+
+    /* Opera */
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
         opacity: 1;
     }

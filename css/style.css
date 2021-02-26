@@ -127,9 +127,10 @@ h3 {
     cursor: pointer;
 }
 
+/* 
 .image:hover{
     background-color: rgb(255, 188, 4);
-}
+} */
 
 .image {
     width: 1200px;
