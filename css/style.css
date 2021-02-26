@@ -44,7 +44,9 @@ header {
     z-index: 22;
     /* background: #f8f8f8; */
 }
-
+p{
+    line-height: 140%;
+}
 a {
     text-decoration: none;
     outline: none;
