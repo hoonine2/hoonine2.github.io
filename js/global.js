@@ -14,15 +14,3 @@ $(document).ready(function() {
 });
 
 
-
-
-$(document).ready(function() {
-    $('.btn').live('touchstart',function(event){
-         $(this).addClass('active');
-     });
-     $('.btn').live('touchend',function(event){
-         $(this).removeClass('active');
-     });
- });
- 
- 

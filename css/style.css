@@ -77,28 +77,6 @@ a {
     /* color: #acacac; */
     color: #242424;
 }
-/* 일단 사용안함
-h1 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 60px;
-    border: 1px dotted rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 24px;
-    color: #acacac;
-    display: inline-block;
-    background-color: rgba(179, 108, 96, 0.1);
-}
-
-h3 {
-    font-size: 16px;
-    color: #acacac;
-    background-color: rgba(30, 221, 221, 0.1);
-    display: inline-block;
-}
-*/
 
 .space{
     height:380px; 
