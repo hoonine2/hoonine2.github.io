@@ -92,7 +92,7 @@ a {
 .container {
     max-width: 960px;
     margin: 0 20px;
-    border: solid 1px red;
+    border: dotted 1px red;
 }
 
 .list {
