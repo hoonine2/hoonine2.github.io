@@ -2,7 +2,6 @@ body {
     background: #f8f8f8;
     color : #242424;
     font-family: 'tex_gyre_herosregular';
-    cursor:url('cursor.cur'),auto;
 }
 
 @font-face {
@@ -46,6 +45,7 @@ header {
 }
 p{
     line-height: 140%;
+    /* letter-spacing: -0.2px; */
 }
 a {
     text-decoration: none;
@@ -90,6 +90,7 @@ a {
 
 .home-logo{
     width:50px;
+    cursor: pointer;
 }
 
 .container {
