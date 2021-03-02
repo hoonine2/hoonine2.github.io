@@ -215,6 +215,12 @@ a {
     width: auto;
 }
 
+.mywork{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
 #vimeo-wrap{
    position: relative;
    padding-bottom: 56.25%; /* 16/9 ratio */
