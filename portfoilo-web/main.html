@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
+    <!-- AOS 라이브러리 불러오기--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.fadethis.min.js"></script>
+    <script src="include.js" defer></script>
+
+    <!-- sound -->
+    <audio id='audio_play' src='파일명.mp3'></audio>
+    <script type="text/javascript">
+        function play() {
+            var audio = document.getElementById('audio_play');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0
+            }
+        }
+    </script>
+
+</head>
+<!-- 1. 헤더 고정
+2. 애니메이션 적용
+3. 설명양식추가 -->
+<body>
+    <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
+
+    <header data-include="header.html"></header>
+
+    <div class="main-img">
+    </div>
+    <section>
+        <div class="column-left">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+            <div class="thumbnail slide-bottom show" onclick="window.location='work-hais.html'">
+                <img src="img/thumbnail-hais.png" alt="">
+                <p class="thumb-text">AI Assistant HAIS</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-time.png" alt="">
+                <p class="thumb-text">&lt;TIME&gt;</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-ioniq.png" alt="">
+                <p class="thumb-text">&lt;IONIQ 5&gt;</p>
+            </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="thumbnail" onclick="window.location=''">
+                    <img src="img/test.png" alt="">
+                    <p class="thumb-text">test</p>
+                </div>
+                </div>
+
+        </div>
+        <div class="column-right">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-earlybuddy.png" alt="">
+                <p class="thumb-text">Earlybuddy</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-dream.png" alt="">
+                <p class="thumb-text">&lt;DREAM&gt;</p>
+            </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="thumbnail" onclick="window.location=''">
+                    <img src="img/thumbnail-one.png" alt="">
+                    <p class="thumb-text">&lt;ONE&gt;</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <p>Somewhere between balance and imbalance.
+            </p>
+        </div>
+        <div class="footer-right">
+            <p>COPYRIGHT © 2022 Jonghoon Yang. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
