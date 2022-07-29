@@ -21,7 +21,10 @@
 2. 애니메이션 적용
 3. 설명양식추가 -->
 <body>
-    <header data-include="header.html"></header>
+    <header id="inc-header"></header>
+    <script>
+        $("#inc-header").load("head.html");
+   </script>
 
     <div class="main-img">
     </div>
