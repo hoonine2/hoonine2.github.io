@@ -17,15 +17,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="jquery.fadethis.min.js"></script>
 </head>
-<!-- 1. 헤더 고정
-2. 애니메이션 적용
-3. 설명양식추가 -->
-<body>
-    <header id="inc-header"></header>
-    <script>
-        $("#inc-header").load("head.html");
-   </script>
 
+<body>
+    <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
+    <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("include/header.html");
+   </script>
+    
     <div class="main-img">
     </div>
     <section>
@@ -81,16 +80,11 @@
 
     </section>
 
-    <footer>
-        <div class="footer-left">
-            <p>Somewhere between balance and imbalance.
-            </p>
-        </div>
-        <div class="footer-right">
-            <p>COPYRIGHT © 2022 Jonghoon Yang. ALL RIGHTS RESERVED.
-            </p>
-        </div>
-    </footer>
+    <div id="inc-footer"></div>
+    <script>
+        $("#inc-footer").load("include/footer.html");
+   </script>
+    
 </body>
 
 </html>
