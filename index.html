@@ -11,59 +11,74 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
-    <!-- AOS 라이브러리 불러오기--> 
+    <!-- AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="jquery.fadethis.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q6V6WQWWZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7Q6V6WQWWZ');
+    </script>
 </head>
 
 <body>
-    <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
+    <script>
+        AOS.init(); // 자바스크립트로 init()을 해야 동작한다. 
+    </script>
 
     <div id="inc-header"></div>
     <script>
         $("#inc-header").load("include/header.html");
-   </script>
-    
+    </script>
+
     <div class="main-img">
     </div>
     <section>
         <div class="column-left">
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
-            <div class="thumbnail slide-bottom show" onclick="window.location='work-hais.html'">
-                <img src="img/thumbnail-hais.png" alt="">
-                <p class="thumb-text">AI Assistant HAIS</p>
-            </div>
+                <div class="thumbnail slide-bottom show" onclick="window.location='work-hais.html'">
+                    <img src="img/thumbnail-hais.png" alt="">
+                    <p class="thumb-text">AI Assistant HAIS</p>
+                </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <div class="thumbnail" onclick="window.location=''">
-                <img src="img/thumbnail-time.png" alt="">
-                <p class="thumb-text">&lt;TIME&gt;</p>
-            </div>
+                <div class="thumbnail" onclick="window.location=''">
+                    <img src="img/thumbnail-time.png" alt="">
+                    <p class="thumb-text">&lt;TIME&gt;</p>
+                </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000">
-            <div class="thumbnail" onclick="window.location=''">
-                <img src="img/thumbnail-ioniq.png" alt="">
-                <p class="thumb-text">&lt;IONIQ 5&gt;</p>
-            </div>
+                <div class="thumbnail" onclick="window.open('https://vimeo.com/687461461')">
+                    <img src="img/thumbnail-ioniq.png" alt="">
+                    <p class="thumb-text">&lt;IONIQ 5&gt;</p>
+                </div>
             </div>
 
-            
+
 
         </div>
         <div class="column-right">
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-            <div class="thumbnail" onclick="window.location=''">
-                <img src="img/thumbnail-earlybuddy.png" alt="">
-                <p class="thumb-text">Earlybuddy</p>
-            </div>
+                <div class="thumbnail" onclick="window.location=''">
+                    <img src="img/thumbnail-earlybuddy.png" alt="">
+                    <p class="thumb-text">Earlybuddy</p>
+                </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
-            <div class="thumbnail" onclick="window.location=''">
-                <img src="img/thumbnail-dream.png" alt="">
-                <p class="thumb-text">&lt;DREAM&gt;</p>
-            </div>
+                <div class="thumbnail" onclick="window.open('https://bit.ly/3vquctO')">
+                    <img src="img/thumbnail-dream.png" alt="">
+                    <p class="thumb-text">&lt;DREAM&gt;</p>
+                </div>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
@@ -78,8 +93,8 @@
     <div id="inc-footer"></div>
     <script>
         $("#inc-footer").load("include/footer.html");
-   </script>
-    
+    </script>
+
 </body>
 
 </html>
