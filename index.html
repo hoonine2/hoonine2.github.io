@@ -3,126 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="portfolio, design, ux, 포트폴리오, 디자인, web, designer, ui, it, art, 영상, motion">
-    <title>HNPF - Portfolio</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>HN</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/global.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q6V6WQWWZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Q6V6WQWWZ');
-</script>
+    <!-- AOS 라이브러리 불러오기--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.fadethis.min.js"></script>
 </head>
 
-<!-- 해야할것. 페이지전환 및 주소명. 커서커스텀. 모바일css수정. 로고애니메이션로티. js테스트 -->
-
 <body>
+    <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
 
-    <div class="container">
-        <header>
-            <div class="nav-wrap">
-                <img src="img/logo.svg" alt="" class="home-logo" onclick="window.location='index.html'">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="" style="pointer-events: none;" title="Not">Career</a></li> -->
-                    <li><a href="mailto: hoonine2@gmail.com" title="Contat by Email" target="_blank">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <section>
-            <div class="space"></div><!--상단 여백-->
-
-            <div class="list" onclick="window.location='project2.html'">
-                <div id="fadein" class="image myfilter">
-                    <p class="caption">UX/UI<br><span style="font-style: italic;">AI Assistant HAIS</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/hais.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list" onclick="window.location='project3.html'">
-                <div class="image hide myfilter">
-                    <p class="caption">UX/UI<br><span style="font-style: italic;">Earlybuddy</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/earlybuddy.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list" onclick="window.location='project4.html'">
-                <div class="image hide myfilter">
-                    <p class="caption">UX/UI<br><span style="font-style: italic;">Kindfunding</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/kindfunding.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list" onclick="window.open('pro7web/index.html')">
-                <div class="image hide myfilter">
-                    <p class="caption">UX/UI<br><span style="font-style: italic;">Surface Pro7 Promotion Website</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/pro7.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list" onclick="window.location='project1.html'">
-                <div class="image hide myfilter">
-                    <p class="caption">Motion Graphics<br><span style="font-style: italic;">Netflix Channel ID</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/c4d.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list" onclick="window.location='project5.html'">
-                <div class="image hide myfilter">
-                    <p class="caption">Motion Graphics<br><span style="font-style: italic;">EPL Intro</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/epl.png" alt="" class="thumbnail-size filter">
-                </div>
-            </div>
-
-            <div class="list">
-                <div class="image hide myfilter" style="cursor: default;">
-                    <p class="caption">Artwork - Poster Design<br><span style="font-style: italic;">TIME</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/poster.png" alt="" class="thumbnail-size">
-                </div>
-            </div>
-
-            <div class="list">
-                <div class="image hide myfilter" style="cursor: default;">
-                    <p class="caption">Artwork - Poster Design<br><span style="font-style: italic;">Harmony</span></p>
-                    <div class="cover"></div>
-                    <img src="img/thumbnail/artwork_harmony.png" alt="" class="thumbnail-size">
-                </div>
-            </div>
-
-            <!-- <div class="list">
-             
-                <h2>h2title</h2>
-                <h3>h3</h3>
-        
-                <div class="image">
-                    <img src="img/thumbnail/test.png" alt="" class="thumbnail-size">
-                </div>
-            </div> -->
-            
-        </section>
-        <footer>
-            <p onclick="window.location='portfolio-web/index.html'">Somewhere between balance and imbalance.<br>COPYRIGHT © 2021 Jonghoon Yang. ALL RIGHTS RESERVED.</p>
-        </footer>
+    <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("include/header.html");
+   </script>
+    
+    <div class="main-img">
     </div>
+    <section>
+        <div class="column-left">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+            <div class="thumbnail slide-bottom show" onclick="window.location='work-hais.html'">
+                <img src="img/thumbnail-hais.png" alt="">
+                <p class="thumb-text">AI Assistant HAIS</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-time.png" alt="">
+                <p class="thumb-text">&lt;TIME&gt;</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-ioniq.png" alt="">
+                <p class="thumb-text">&lt;IONIQ 5&gt;</p>
+            </div>
+            </div>
+
+            
+
+        </div>
+        <div class="column-right">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-earlybuddy.png" alt="">
+                <p class="thumb-text">Earlybuddy</p>
+            </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+            <div class="thumbnail" onclick="window.location=''">
+                <img src="img/thumbnail-dream.png" alt="">
+                <p class="thumb-text">&lt;DREAM&gt;</p>
+            </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="thumbnail" onclick="window.location=''">
+                    <img src="img/thumbnail-one.png" alt="">
+                    <p class="thumb-text">&lt;ONE&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="inc-footer"></div>
+    <script>
+        $("#inc-footer").load("include/footer.html");
+   </script>
+    
+</body>
 
 </html>

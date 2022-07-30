@@ -1,241 +1,198 @@
-body {
-    background: rgb(255, 255, 255);
-    /* background: #f8f8f8; */
-    color: #242424;
-    font-family: 'tex_gyre_herosregular';
-
-    /* 가로스크롤 막기 */
-    max-width: 100%;
-    overflow-x: hidden;
-
-    pointer-events: none;
-}
-
-@font-face {
-    font-family: 'tex_gyre_herosbold';
-    src: url('font/texgyreheros-bold-webfont.eot');
-    src: url('font/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('font/texgyreheros-bold-webfont.woff2') format('woff2'),
-        url('font/texgyreheros-bold-webfont.woff') format('woff'),
-        url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
-        url('font/texgyreheros-bold-webfont.svg#tex_gyre_herosbold') format('svg');
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'tex_gyre_herosregular';
-    src: url('font/texgyreheros-regular-webfont.eot');
-    src: url('font/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('font/texgyreheros-regular-webfont.woff2') format('woff2'),
-        url('font/texgyreheros-regular-webfont.woff') format('woff'),
-        url('font/texgyreheros-regular-webfont.ttf') format('truetype'),
-        url('font/texgyreheros-regular-webfont.svg#tex_gyre_herosregular') format('svg');
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-    font-weight: normal;
-    font-style: normal;
-}
-
-::selection {
-    background-color: #242424;
-    color: rgb(255, 230, 0);
-}
-
-header {
-    width: 100%;
-    height: 60px;
-    /* border: 1px dotted rgba(23, 131, 255, 0.692); */
-    position: relative;/*고정이 안돼서 임시로 넣음*/
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-ul {
-    list-style-type: none;
-    margin-bottom: 0;
-}
-
-li {
-    font-size: 14px;
-    float: left;
-}
-
-/* 
-li a:hover {
-    text-decoration: none;
-    transition-duration: 0.3s;
-    color: rgb(255, 125, 4);
-    text-decoration: none;
-} */
-
-a {
-    text-decoration: none;
-}
-
-.space {
-    height: 80px;
-    width: auto;
-}
-
-.nav-wrap {
-    width: auto;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.home-logo {
-    width: 50px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 20px;
-    /* border: dotted 1px red; */
-}
-
-.list {
-    height: auto;
-    margin-bottom: 16px;
-    cursor: pointer;
-    /* border: dotted 1px rgb(0, 146, 37); */
-}
-
-.image {
-    width: 100%;
-    /* max-width: 480px; */
-    height: auto;
-    /* float: right; */
-}
-
-.thumbnail-size {
-    width: 100%;
-    height: auto;
-}
-
-/* 
-.filter {
-    filter:brightness(5);
-    -webkit-filter:brightness(5);
-    filter:grayscale(40%);
-    -webkit-filter: grayscale(100%);
-} */
-
-
-
-/* 
-.myfilter img {
-
-    filter: sepia(0.3) grayscale(0.99) contrast(1.1) brightness(1.21) ;
-
-}
-
-.myfilter{
-
-      position: relative;
-
-}
-
-.myfilter:after{
-
-    position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
-
-    background: rgba(152, 152, 152, 0.25);
-
-    mix-blend-mode:
-
-} */
-/*이미지필터효과*/
-
-
-.cover {
-    display: none;
-}
-
-.cover:hover {
-    background-color: rgb(255, 188, 4);
-    opacity: 0;
-    transition: 0s;
-}
-
-.caption {
+body{
+    margin: 12px ;
+    background-color: rgb(235, 235, 235);
     font-size: 12px;
+    line-height: 1.8;
+
+    font-family: neue-haas-grotesk-text,pretendard,sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    color:rrgb(56, 56, 56);
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /*스크롤바제거*/
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+::selection {
+    background-color: #353535;
+     color: rgb(204, 204, 204);
+}
+
+/* 한글만 다른폰트적용 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+header{
+    width: calc(100% - 40px);
+    height: 40px;
+    display: flex;
+    gap: 20px;
+    z-index: 111;
+    /*블러효과*/
+    /* backdrop-filter: blur(18px) saturate(170%);
+    -webkit-backdrop-filter: blur(18px) saturate(170%);
+    background-color: rgba(235, 238, 222, 0.2); */
+    /* border: 1px solid rgba(94, 94, 94, 0.281); */
+    top: 20px;
+    position: fixed;
+}
+header > div{
+    width: 50%;
+    height: auto;
+}
+/* .header-left{
+    width: 50%;
+    height: auto;
+}
+.header-right{
+    width: 50%;
+    height: auto;
+} */
+ul li{
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(56, 56, 56);
+}
+a:hover{
+    color: rgb(130, 130, 130);
+    transition: 0.2s;
+}
+section{
+    display: flex;
+    height: auto;
+    gap: 12px;
+    padding-bottom: 40px;
+    /* margin-top: 60px; 헤더 fixed 영역크기*/
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+ /* 부모 > 자식에 소속된 태그만 지정 */
+section > div{
+    width: 50%;
+    /* border: solid 1px rgb(226, 226, 226); */
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(138, 92, 92, 0.137);
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 8px;
+    overflow: hidden; */
+}
+
+.thumbnail::after {
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
-    z-index: 4;
-    color: #000000;
-    opacity: 0.8;
-    margin: 10px;
-    line-height: 120%;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
 }
 
-.footer {
-    margin: 40px 0px 20px 0px;
-    text-align: right;
-    font-size: 10px;
+.thumbnail:hover::after {
+    background-color: rgba(216, 216, 216, 0.8);
 }
 
+.thumbnail:hover .thumb-text {
+    color: rgb(56, 56, 56);
+    opacity: 1;
+}
 
-.hide {
+.thumb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(68, 68, 68);
     opacity: 0;
+    text-align: center;
+    transition: 0.4s;
 }
 
-#fadein {
-    /*이건 스크롤이벤트 없이 페이드인*/
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    /* Firefox */
-    -webkit-animation: fadein 1s;
-    /* Safari and Chrome */
-    -o-animation: fadein 1s;
-    /* Opera */
+.main-img {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: rgba(136, 49, 49, 0.148); */
+    text-align: center;
+    margin-top: 60px;
+    /* border: 1px solid rgb(228, 228, 228); */
 }
 
-@keyframes fadein {
-    from {
+
+
+
+/* 
+.about-intro {
+    margin-top: 60px;
+    text-align: center;
+} */
+
+
+
+
+
+
+
+footer{
+    width: calc(100% - 40px);
+    height: 40px;
+    /* border: solid 1px rgb(104, 103, 101); */
+    /* background-color: rgb(238, 235, 231); */
+    display: flex;
+    gap: 20px;
+    position: fixed; 
+    bottom: 0px;  
+}
+footer > div{
+    width: 50%;
+    height: auto;
+}
+.description{
+    position: sticky;
+    top: 80px;
+    margin-top: 400px;
+}
+
+/* 
+@keyframes anim{
+    from{
+        transform: translateY(80px);
         opacity: 0;
     }
-
     to {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@-moz-keyframes fadein {
-
-    /* Firefox */
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-
-    /* Safari and Chrome */
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadein {
-
-    /* Opera */
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
+.show{
+    animation: anim 1s;
+    animation-timing-function: cubic-bezier(.42,0,.58,1);
+} */

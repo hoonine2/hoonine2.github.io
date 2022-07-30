@@ -1,108 +1,83 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="portfolio, design, ux, 포트폴리오, 디자인, web, designer, ui, it, art">
-    <title>HNPF</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>HN</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/global.js"></script>
+    <!-- AOS 라이브러리 불러오기--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.fadethis.min.js"></script>
 </head>
 
 <body>
+    <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("include/header.html");
+   </script>
 
-    <div class="container">
-        <header>
-            <div class="nav-wrap">
-                <img src="img/logo.svg" alt="" class="home-logo" onclick="window.location='index.html'">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="" style="pointer-events: none;" title="Not">Career</a></li> -->
-                    <li><a href="mailto: hoonine2@gmail.com" title="Contat by Email" target="_blank">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="sub-space"></div>
-            
-
-            <br>
-
-            <p><span style="font-weight: bold;">Jonghoon Yang</span>
-            <br>UX/UI Designer
-            <br>1996. 02. 04.<br>Seoul KR.
-            <br>+82 10 9111 5370
-            <br>hoonine2@gmail.com
-            <br>
-            <br>
-
-            <p><span style="font-weight: bold;">Introduction</span>
+    <div class="main-img">
+    </div>
+    <section>
+        <div class="about-intro">
+                Profile
+                <br>Jonghoon Yang
+                <br>Product Designer
+                <br>Seoul KR.
+                <br>+82 10 9111 5370
+                <br>hoonine2@gmail.com
                 <br>
-                Design requires logic and rationale.
+                <br>
+    
+                Introduction
+                <br>Design requires logic and rationale.
                 <br>Even a small thing should be able to fully explain it.
                 <br>I constantly think about it to decide something and try to find a reason.
                 <br>And I always listen to the reason.
                 <br>That's my way of designing.
-
-            <br><br><span style="font-weight: bold;">Education</span>
-            <br>M.D. Student, Kookmin University, AI Design Lab, Graduate School of Techno Design, Seoul, KR, 2021.03~
-            <br>BFA Seokyeong University, College of Art, Visual Information Design, Seoul, KR, 2015.03-2021.02
-            
-            <br><br><span style="font-weight: bold;">Experience</span>
-            <br>Nexon Computer Museum Open Call V Reality Excellence Award, 2020.11
-            <br>26th SOPT Design Part Certificate, 2020.03-2020.08
-            <br>2020 Blue Awards International Competition for Product Culture&Design Finalist, 2020.07
-            <br>IBM Call for Code Korea Hackathon Certificate, 2020.06
-            <br>K-water World Water Day Video Competition Grand Award, 2020.03
-            <br>SOPT 15th Hackathon Excellence Award, 2020.01
-            <br>25th SOPT Design Part Certificate, 2019.09-2020.01
-            
-            <br>
-            <br><span style="font-weight: bold;">Skills</span>
-            <br>Photoshop, Illustrator, After Effects, Primiere Pro, Cinema 4D, XD, Figma, Zeplin, Protopie
-
-            <div class="sub-space"></div>
-
-            <p><span style="font-weight: bold;">양종훈</span>
-                <br>UX/UI 디자이너
-                <br>1996. 02. 04.<br>대한민국 서울
-                <br>010-9111-5370
-                <br>hoonine2@gmail.com
+    
+                <br><br>Education
+                <br>M.D. Student, Kookmin University, AI Design Lab, Graduate School of Techno Design, Seoul, KR, 2021.03~
+                <br>BFA Seokyeong University, College of Art, Visual Information Design, Seoul, KR, 2015.03-2021.02
+                
+                <br><br>Experience & Award
+                <br>ARTSCLOUD, Digital Art Fair Top 100 Artists, 2021. 12
+                <br>Ergonomics Society of Korea, Idea Contest to Promote Future Transportation, Grand Prize, 2021. 11
+                <br>K-DESIGN AWARD 2021, Gold Winner, 2021.07
+                <br>Nexon Computer Museum Open Call V Reality, Excellence Award, 2020.11
+                <br>26th SOPT Design Part, Certificate, 2020.03-2020.08
+                <br>2020 Blue Awards International Competition for Product Culture&Design, Finalist, 2020.07
+                <br>IBM Call for Code Korea Hackathon, Certificate, 2020.06
+                <br>K-water World Water Day Video Competition, Grand Prize, 2020.03
+                <br>SOPT 15th Hackathon, Excellence Award, 2020.01
+                <br>25th SOPT Design Part, Certificate, 2019.09-2020.01
+                
                 <br>
-                <br>
-            <p><span style="font-weight: bold;">소개</span>
-                <br>디자인에는 근거와 논리가 필요합니다. <br>작은 것 하나일지라도 그것을 충분히 설명할 수 있어야합니다. 
-                    <br>무언가를 결정하기 위해 끊임없이 고민하며 이유를 찾으려고 노력합니다. <br>그리고 그 이유에 항상 귀를 기울입니다. 
-                    <br>그것이 제가 디자인을 대하는 태도입니다.
+                <br>Skills
+                <br>Photoshop, Illustrator, InDesign, After Effects, Primiere Pro, Cinema 4D, Unity, TouchDesigner, XD, Figma, Zeplin, Protopie
+                
 
-                <br><br><span style="font-weight: bold;">학력사항</span>
-                <br>국민대학교 테크노디자인전문대학원 디자인사이언스학과 AI디자인 전공, 석사과정, 2021.03~
-                <br>서경대학교 예술대학 시각정보디자인전공, 졸업, 2015.03-2021.02
-                <br><br><span style="font-weight: bold;">경력사항</span>
-                <br>Nexon Computer Museum Open Call V Reality 우수상, 2020.11
-                <br>대학생 연합 IT창업동아리 26기 SOPT 디자인파트 수료, 2020.03-2020.08
-                <br>2020 블루어워드 상품문화디자인 국제공모전입선, 2020.07
-                <br>IBM Call for Code Korea Hackathon 수료, 2020.06
-                <br>한국수자원공사 세계 물의 날 영상 공모전 대상, 2020.03
-                <br>SOPT 15th 앱잼 장기해커톤 우수상, 2020.01
-                <br>대학생 연합 IT창업동아리 25기 SOPT 디자인파트 수료, 2019.09-2020.01
-                <br>
-                <br><span style="font-weight: bold;">툴</span>
-                <br>포토샵, 일러스트레이터, 애프터이펙트, 프리미어프로, 시네마4D, XD, 피그마, 제플린, 프로토파이
+                <br><br>Interests
+                <br>UX/UI, VR/AR, Interaction Design, AI, Data Literacy, 3D Graphics, Media Art, Motion Grpahics
 
-        </p>
+        </div>
+        <div class="column-right">
+        </div>
 
-        <div class="sub-space"></div>
+    </section>
 
-    </div>
+    <div id="inc-footer"></div>
+    <script>
+        $("#inc-footer").load("include/footer.html");
+   </script>
 </body>
 
 </html>
