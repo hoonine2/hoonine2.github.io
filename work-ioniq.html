@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
+    <!-- AOS 라이브러리 불러오기--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.fadethis.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q6V6WQWWZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7Q6V6WQWWZ');
+    </script>
+</head>
+
+<body>
+    <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("include/header.html");
+   </script>
+    <div class="main-img">
+    </div>
+    <section>
+        <div class="column-left">
+            <p class="description">
+                &lt;IONIQ 5&gt;<br>
+                Personal Project<br>
+                
+            </p>
+        </div>
+        <div class="column-right">
+            <div id="vimeo-wrap-wide">
+                <iframe src="https://player.vimeo.com/video/687461461?h=efb694d16f" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <img class="work" src="img/ioniq0.png" alt="">
+            <img class="work" src="img/ioniq01.png" alt="">
+            <img class="work" src="img/ioniq1.png" alt="">
+            <img class="work" src="img/ioniq2.png" alt="">
+            <img class="work" src="img/ioniq3.png" alt="">
+            <img class="work" src="img/ioniq4.png" alt="">
+            <img class="work" src="img/ioniq5.png" alt="">
+        </div>
+    </section>
+
+    <div id="inc-footer"></div>
+    <script>
+        $("#inc-footer").load("include/footer.html");
+   </script>
+</body>
+
+</html>
