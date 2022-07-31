@@ -180,6 +180,24 @@ footer > div{
     margin-top: 400px;
 }
 
+#vimeo-wrap{
+    position: relative;
+    padding-bottom: 100%; /* 16/9 ratio=52.5%. 영상비율로 계산 */
+    /* padding-top: 30px; IE6 workaround */
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+ #vimeo-wrap iframe,
+ #vimeo-wrap object,
+ #vimeo-wrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
 /* 
 @keyframes anim{
     from{
