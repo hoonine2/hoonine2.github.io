@@ -1,3 +1,4 @@
+@media screen and (min-width: 360px) and (max-width: 768px){
 body{
     margin: 12px ;
     background-color: rgb(235, 235, 235);
@@ -23,7 +24,7 @@ body::-webkit-scrollbar {
 }
 ::selection {
     background-color: #353535;
-     color: rgb(204, 204, 204);
+        color: rgb(204, 204, 204);
 }
 
 /* 한글만 다른폰트적용 */
@@ -85,7 +86,7 @@ img {
 
 
 
- /* 부모 > 자식에 소속된 태그만 지정 */
+    /* 부모 > 자식에 소속된 태그만 지정 */
 section > div{
     width: 50%;
     /* border: solid 1px rgb(226, 226, 226); */
@@ -196,3 +197,4 @@ footer > div{
     animation: anim 1s;
     animation-timing-function: cubic-bezier(.42,0,.58,1);
 } */
+}
