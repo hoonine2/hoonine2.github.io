@@ -216,6 +216,24 @@ footer > div{
     height: 100%;
  }
 
+ #vimeo-wrap-hd{
+    position: relative;
+    padding-bottom: 56.25%;
+    /* padding-top: 30px; IE6 workaround */
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+ #vimeo-wrap-hd iframe,
+ #vimeo-wrap-hd object,
+ #vimeo-wrap-hd embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
 /* 
 @keyframes anim{
     from{
