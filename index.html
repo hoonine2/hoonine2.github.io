@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/iwo4qfp.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 360px) and (max-width: 768px)">
     <!-- AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -40,6 +39,29 @@
     <script>
         $("#inc-header").load("include/header.html");
     </script>
+
+
+<!-- 커서 커스텀 -->
+<div class="cursor"></div>
+<div class="cursor-lazy"></div>
+<script>
+    "use strict";
+        (function(){
+            var cursor = document.querySelector('.cursor');
+            var cursorLazy = document.querySelector('.cursor-lazy');
+            var links = document.querySelectorAll('a');
+
+            var editCursor = function editCursor(event){
+                cursor.style.left = event.clientX + 'px';
+                cursor.style.top = event.clientY + 'px';
+                cursorLazy.style.left = event.clientX + 'px';
+                cursorLazy.style.top = event.clientY + 'px';
+            };
+
+            window.addEventListener('mousemove',editCursor);
+        })();
+</script>
+
 
     <div class="main-img">
     </div>
